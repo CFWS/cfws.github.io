@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <head>
-        <meta charset='utf-8'>
-        <title>CFWS - Github</title>
-        <link rel="icon" type="image/png" href="media/img/Icon.png">
-        <link rel='stylesheet' type='text/css' href='media/css/style.min.css'>
-        <meta name=viewport content="width=device-width, initial-scale=1">
-        <meta name="google-site-verification" content="7FggGYhpbU11DrQ9--hxwjlvIPXdCfj5g17MQ0pAfyA" />
-    </head>
-    <body>
-        <div id="panel">
-            <div id="panelcontainer">
-                <img src='media/img/Icon.png' alt='CFWS'>
-                <h1>CFWS</h1>
-                <div id="social">
-                    <a href="https://www.github.com/CFWS">Github</a>
-                    <a href="https://www.youtube.com/user/ColdFlameStudio" target="_blank">Youtube</a>
-                </div>
+<head>
+    <meta charset='utf-8'>
+    <title>CFWS - Github</title>
+    <link rel="icon" type="image/png" href="media/img/Icon.png">
+    <link rel='stylesheet' type='text/css' href='media/css/style.min.css'>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="7FggGYhpbU11DrQ9--hxwjlvIPXdCfj5g17MQ0pAfyA" />
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+
+                var images = document.getElementsByTagName('img');
+                for (var i = 0; i < images.length; i++) {
+                    images[i].onload = fadein(images[i]); {
+                    }
+                }
+
+                var project = document.querySelectorAll('.project');
+                for (var i = 0; i < project.length; i++) {
+                    project[i].onload = fadein(project[i]); {
+                    }
+                }
+
+            }
+
+            function fadein(e) {
+                e.className = e.className + " fadein";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="panel">
+        <div id="panelcontainer">
+            <img src='media/img/Icon.png' alt='CFWS'>
+            <h1>CFWS</h1>
+            <div id="social">
+                <a href="https://www.github.com/CFWS">Github</a>
+                <a href="https://www.youtube.com/user/ColdFlameStudio" target="_blank">Youtube</a>
             </div>
         </div>
-        <div id="main">
-            <div id="maincontainer">
-                <div id="projectscontainer">
-                    <!-- Start Project Container-->
-                    <div id="about">
-                        <h1>About</h1>
-                        <p>Coldflame Studios is a bespoke creative team, based in Melbourne, Australia. Bringing together learning students from information technology and the fine and creative arts, the group is utterly committed to producing projects that explore new ideas and are visually stunning. Through the work of Coldflame studios, there exists the ideal and vision to find the balance between simple form and rich function – and at the core of the group’s philosophy sits elegance, a descriptor that carries through the entire portfolio. </p>
-                    </div>
+    </div>
+    <div id="main">
+        <div id="maincontainer">
+            <div id="projectscontainer">
+                <!-- Start Project Container-->
+                <div id="about">
+                    <h1>About</h1>
+                    <p>Coldflame Studios is a bespoke creative team, based in Melbourne, Australia. Bringing together learning students from information technology and the fine and creative arts, the group is utterly committed to producing projects that explore new ideas and are visually stunning. Through the work of Coldflame studios, there exists the ideal and vision to find the balance between simple form and rich function – and at the core of the group’s philosophy sits elegance, a descriptor that carries through the entire portfolio. </p>
+                </div>
 
-                    <h1>Projects</h1>
-                    <div class="project">
-                        <div class="pimage" id="periodic"></div>
-                        <div class="pcontainer">
-                            <div class="pcontainerver">
-                                <h3>Periodic</h3>
-                                <p>A minimalistic Periodic Table, coded in HTML5, CSS3 and Javascript.</p>
-                                <a href="https://cfws.github.io/Periodic/" target="_blank">Visit Project Page</a>
-                            </div>
+                <h1>Projects</h1>
+                <div class="project">
+                    <div class="pimage" id="periodic"></div>
+                    <div class="pcontainer">
+                        <div class="pcontainerver">
+                            <h3>Periodic</h3>
+                            <p>A minimalistic Periodic Table, coded in HTML5, CSS3 and Javascript.</p>
+                            <a href="https://cfws.github.io/Periodic/" target="_blank">Visit Project Page</a>
                         </div>
                     </div>
-                    <!-- End Project Container-->
                 </div>
+                <!-- End Project Container-->
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
